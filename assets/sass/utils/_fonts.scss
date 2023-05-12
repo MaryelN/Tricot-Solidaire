@@ -1,0 +1,52 @@
+$font-logo: 'Nunito', sans-serif;
+$font-primary: 'Oxygen', sans-serif;
+$font-title: 'Podkova', serif;
+
+%typo-logo {
+  font-family: $font-logo;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+%typo-title1 {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+%typo-title2 {
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+%typo-sub {
+  font-family: $font-title;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+%typo-text{
+  @extend %typo-title1;
+  font-size: 17px;
+}
+
+%typo-btn {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%typo-text-L {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+%typo-count {
+  @extend %typo-text-L;
+  font-size: 20px;
+  text-transform: uppercase;
+}
