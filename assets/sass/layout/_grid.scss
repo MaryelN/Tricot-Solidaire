@@ -1,0 +1,30 @@
+
+.body {
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr); 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+    
+
+  .header { 
+    grid-area: 1 / 1 / 2 / 13; 
+  }
+
+  .cover { 
+    grid-area: 2 / 1 / 4 / 13; 
+}
+
+  .tricot { 
+    grid-area: 4 / 1 / 6 / 13; 
+  } 
+
+  .contact {
+    grid-area: 6 / 1 / 8 / 13; 
+  }
+
+  .footer {
+    grid-area: 8 / 1 / 9 / 13;
+  }
+}

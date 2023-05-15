@@ -1,2 +1,100 @@
-@use '../components/button' as b;
+@forward '../layout/main';
+@use '../utils/main' as u;
+@forward '../components/main';
+
+
+// COVER MAIN SECTION
+
+.cover {
+  
+  background: url(/assets/images/pexels-armand-valendez-15026564.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  &__title{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    justify-content: center;
+    padding: 5rem;
+
+    &-1{
+      grid-area: 1/1/2/4;
+      margin-top: 5rem;
+      @extend %typo-title1;
+      color: u.$color-w;
+    }
+    &-2 {
+      grid-area: 2/1/3/4;
+      margin-top: 2rem;
+      @extend %typo-title2;
+      color: u.$color-w;
+    }
+    .btn.title { 
+      grid-area: 3/3;
+      margin: auto;
+      margin-top: 6rem;
+      min-width: 8.6rem;
+    } 
+  }
+
+// COVER SECOND SECTION
+
+  &__subtitle {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem;
+
+    &__h2{
+      text-align: center;
+      @extend %typo-sub;
+    }
+    
+    &__p{
+      justify-content: center;
+      text-align: center;
+      margin-top: 3rem; 
+      @extend %typo-text;
+    }
+    &__p2{
+      @extend .cover__subtitle__p;
+      @extend %typo-text-L;
+      margin-top: 5rem; 
+    }
+    
+    .btn.event{
+      margin: auto;
+      margin-top: 3rem;  
+    }
+    
+  }
+}
+
+// TRICOT
+
+.tricot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+  @extend %typo-text-L;
+  
+  
+  .slider {
+    max-width: 60rem;
+    margin: 10rem, auto;
+    border: .3rem solid u.$color-red;
+    display: flex;
+    
+
+  }
+}
+.tricot__container {
+  border: 1px solid #f1f1f1;
+  
+}
+
 

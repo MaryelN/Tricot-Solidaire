@@ -20,6 +20,9 @@
   <title>Tricots Solidaires</title>
 
     <!--STYLE-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Oxygen:wght@300;400&family=Podkova:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.min.css">
 </head>
 <body>
@@ -52,15 +55,16 @@
     <section class="cover">
       
       <div class="cover__title">
-        <h1 class="cover__title-1">Nous tricotons ensemble pour aider les plus vulnérables à lutter contre le froid</h1>
+        <h1 class="cover__title-1">Nous tricotons ensemble</h1>
+        <h2 class="cover__title-2">Pour aider les plus vulnérables à lutter contre le froid</h2>
         <button class="btn title">FAIRE UN DON</button>
       </div>
       
       <div id="qui-sommes" class="cover__subtitle">
         <h2 class="cover__subtitle__h2">Qui sommes nous ?</h2>
-        <button class="btn event">prochain événement</button>
         <p class="cover__subtitle__p">Nous organisons des ateliers de tricot gratuits, pour tout le monde, pas besoin d'avoir de l'expérience, juste l'envie d'apprendre et de faire du bien !</p>
-        <p class="cover__subtitle__p">Les accessoires réalisés sont destinés aux populations qui dorment à la rue.</p>
+        <button class="btn event">prochain événement</button>
+        <p class="cover__subtitle__p2">Les accessoires réalisés sont destinés aux populations qui dorment à la rue.</p>
       </div>
       
     </section>
@@ -69,11 +73,15 @@
     <!-- TRICOT -->   
     <section class="tricot">
       
-      <h3 class="tricot__title">Les personnes qui tricotent comme celles qui reçoivent les tricots ressortent grandies de cet acte de solidarité.</h3>
+      <p class="tricot__title">Les personnes qui tricotent comme celles qui reçoivent les tricots ressortent grandies de cet acte de solidarité.</p>
 
-      <div class="tricot__slide">
-        <img src="" alt="Image tricot 1">
-        <img src="" alt="Image tricot 2">
+      <div class="tricot__container">
+        <div class="slider">
+          <img class="slider__img" src="/assets/images/mama&fille.jpg" alt="Image tricot 1">
+          <img class="slider__img"src="/assets/images/volunteer.jpg" alt="Image tricot 2">
+          <img class="slider__img"src="/assets/images/embrase.jpg" alt="Image tricot 3">
+          <img class="slider__img"src="/assets/images/mama&fille.jpg" alt="Image tricot 1">
+        </div>
       </div>
 
     </section>
@@ -131,8 +139,8 @@
             </div>
           </form>
 
-          <div class="btn">
-            <button type="submit">CONTACTER</button>
+          <div>
+            <button class="btn" type="submit">CONTACTER</button>
           </div>
 
         </div>

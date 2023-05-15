@@ -1,0 +1,45 @@
+@use '../utils/main' as u;
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: u.$color-red;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid u.$color-red;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 u.$color-red;
+  @extend %typo-btn;
+  
+  &:hover {
+    color: u.$color-w;
+    box-shadow: inset 0 -100px 0 0 u.$color-red;
+  }
+  
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+
+.btn.title{
+@extend .btn;
+color: u.$color-w;
+border: 2px solid u.$color-w;
+&:hover {
+  color: u.$color-red;
+  box-shadow: inset 0 -100px 0 0 u.$color-w;
+}
+
+&:active {
+  @extend .btn, :active; 
+}
+}
