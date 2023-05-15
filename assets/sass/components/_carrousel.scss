@@ -1,0 +1,34 @@
+
+.tricot__container {
+  max-width: 50rem;
+  margin: 10rem, auto;
+  overflow: hidden;
+  
+  
+  .slider{
+    display: flex;
+    animation: slider-1 25s infinite ease-in-out;
+    width: 40rem;
+    height: 30rem;
+    
+
+    
+    &__img{
+    flex-shrink: 0;
+    
+    }
+  }
+}
+
+
+@keyframes slider-1 {
+0%,
+20% {
+  transform: translateX(0);
+}
+
+
+100% {
+  transform: translateX(-258%);
+}
+} 

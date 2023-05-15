@@ -9,7 +9,19 @@
   
   background: url(/assets/images/pexels-armand-valendez-15026564.jpg);
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-size: 100% 50%;
+
+  @media screen and (min-width: 663px){
+    .cover {
+    background-size: 100% 55%;
+  }
+  }
+  @media screen and (min-width: 663px){
+    .cover {
+    background-size: 100% 55%;
+  }
+  }
+
   &__title{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
