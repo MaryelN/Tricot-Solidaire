@@ -1,0 +1,14 @@
+{
+  "name": "tricot-solidaire",
+  "version": "1.0.0",
+  "description": "Website for an association",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maryel Navarro",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
